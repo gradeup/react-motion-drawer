@@ -65,7 +65,6 @@
     "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
-    "1-liners": "^0.4.0",
     "prop-types": "^15.5.10",
     "react-hammerjs": "^1.0.1",
     "react-motion": "^0.5.2",

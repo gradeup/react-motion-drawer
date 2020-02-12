@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Motion, spring } from "react-motion";
 import Hammer from "react-hammerjs";
-import isFunction from "1-liners/isFunction";
 import styles from "./styles";
 
 const {
@@ -210,7 +209,7 @@ export default class Drawer extends React.Component {
               >
                 <div style={transform}>
                   <div className={className} style={computedStyle}>
-                    {isFunction(children)
+                    {typeof children === 'function'
                       ? children(interpolated.myProp)
                       : children}
 
